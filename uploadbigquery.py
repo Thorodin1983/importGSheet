@@ -9,10 +9,10 @@ client = bigquery.Client.from_service_account_json(key_path)
 
 conn_str = (
     'DRIVER={ODBC Driver 17 for SQL Server};'
-    'SERVER=SERVDB4\\SQLEXPRESS;'
-    'DATABASE=futebol;'
-    'UID=sa;'
-    'PWD=Luan@1983;'
+    'SERVER=<instancia>;'
+    'DATABASE=<db>;'
+    'UID=<table>;'
+    'PWD=<senha>;'
 )
 conn = pyodbc.connect(conn_str)
 
